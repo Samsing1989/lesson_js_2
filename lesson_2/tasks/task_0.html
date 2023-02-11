@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 0</title>
+</head>
+
+<body>
+	<h1>Задача 0</h1>
+	<p>Обчислити значення виразів
+	<ol>
+		<li>S1=a+12+b</li>
+		<li>S_2=√(((a+b)/2a)) </li>
+		<li>S_3=∛((a+b)c)</li>
+		<li>S_4=sin⁡(a/(-b)) </li>
+	</ol>
+	</p>
+	<script>
+		// 1. Вводимо необхідні дані
+		let a = parseFloat(prompt('Введіть занчення а', '0'))
+		let b = parseFloat(prompt('Введіть занчення b', '0'))
+		let c = parseFloat(prompt('Введіть занчення c', '0'))
+		// 2. Знаходимо результат
+		let s1 = a + 12 + b
+		let s2 = Math.sqrt((a + b) / (2 * a))
+		let s3 = Math.cbrt((a + b) * c)
+		let s4 = Math.sin((a / (-b)))
+		// 3. Виводимо результат
+		document.write(`значення = ${s1} <br>`)
+		document.write(`значення = ${s2.toFixed(3)} <br>`)
+		document.write(`значення = ${s3.toFixed(3)} <br>`)
+		document.write(`значення = ${s4.toFixed(3)} `)
+	</script>
+</body>
+
+
+</html>

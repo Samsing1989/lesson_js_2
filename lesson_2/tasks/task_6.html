@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 6</title>
+</head>
+
+<body>
+	<h1>Задача 6</h1>
+	<p>З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару
+		окремо та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.</p>
+	<script>
+		// 1. Вводимо необхіднігодинаr дані
+		let price = parseFloat(prompt('Введіть вартість товару грн', ''))
+		let number = parseInt(prompt('Введіть кількість товару шт', ''))
+		let price2 = parseFloat(prompt('Введіть вартість товару грн', ''))
+		let number2 = parseInt(prompt('Введіть кількість товару шт', ''))
+		let price3 = parseFloat(prompt('Введіть вартість товару грн', ''))
+		let number3 = parseInt(prompt('Введіть кількість товару шт', ''))
+		// 2. Знаходимо результат
+		let product = price * number
+		let product2 = price2 * number2
+		let product3 = price3 * number3
+		let products = product + product2 + product3
+		// 3. Виводимо результат
+		document.write(`
+		<table border="2px" >
+			<tr>
+				<th>Назва товару</th>
+				<th>Ціна</th>
+				<th>Кількість</th>
+				<th>Загальна вартість</th>
+			<tr>
+				<tr>
+					<td> Товар 1 </td>
+					<td>${price.toFixed(1)}</td>
+					<td>${number.toFixed(0)}</td>
+					<td>${product.toFixed(1)}</td>
+				<tr>
+					<tr>
+					<td> Товар 2 </td>
+					<td>${price2.toFixed(1)}</td>
+					<td>${number2.toFixed(0)}</td>
+					<td>${product2.toFixed(1)}</td>	
+				<tr>
+			<tr>
+				<td> Товар 3 </td>
+				<td>${price3.toFixed(1)}</td>
+				<td>${number3.toFixed(0)}</td>
+			<td>${product3.toFixed(1)}</td>
+			</tr>
+		</table> <br>
+			`)
+		document.write(`загальна сума товару = ${products.toFixed(1)}`)
+	</script>
+</body>
+
+</html>
+
+
+<!-- <th> Товар 1 </th>
+<th> Товар 2 </th>
+<th> Товар 3 </th> -->

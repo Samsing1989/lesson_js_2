@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 5</title>
+</head>
+
+<body>
+	<h1>Задача 5</h1>
+	<p>Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.</p>
+	<script>
+		// 1. Вводимо необхідні дані
+		let seconds = parseInt(prompt('Введіть секунди', ''))
+		// 2. Знаходимо результат
+		const HOURS_SECOUNDS = 3600
+		const MINUTES_SECONDS = 60
+		let hour = Math.floor(seconds / HOURS_SECOUNDS)
+		let minute = Math.floor(seconds / MINUTES_SECONDS)
+		// 3. Виводимо результат
+		document.write(`скільки пройшло годин =  ${hour.toFixed(0)} <br>`)
+		document.write(`скільки пройшло хв =   ${minute.toFixed(0)}`)
+	</script>
+</body>
+
+</html>
